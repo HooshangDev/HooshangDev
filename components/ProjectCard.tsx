@@ -1,11 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 interface Project {
   title: string
   engine: string
   description: string
+  image: string
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -14,7 +16,14 @@ export default function ProjectCard({ project }: { project: Project }) {
       whileHover={{ y: -5 }}
       className="glass rounded-3xl overflow-hidden"
     >
-      <div className="h-60 bg-white/5" />
+      <div className="h-60 bg-white/5 relative overflow-hidden">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-cover"
+        />
+      </div>
 
       <div className="p-8">
         <p className="text-blue-400 mb-2">{project.engine}</p>
