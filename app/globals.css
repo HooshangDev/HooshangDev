@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050505;
+  color: white;
+  overflow-x: hidden;
+}
+
+.gradient-bg {
+  background:
+    radial-gradient(circle at top left, rgba(0, 119, 255, 0.15), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255, 0, 140, 0.12), transparent 30%),
+    #050505;
+}
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
