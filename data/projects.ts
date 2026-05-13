@@ -1,9 +1,15 @@
 export const projects = [
   {
+    title: 'RogueRider',
+    engine: 'Unreal Engine',
+    description: 'Multiplayer racing game with spline movement and custom replication systems.',
+    image: '/images/projects/rr_garage.jpg'
+  },
+  {
     title: 'EverRide',
     engine: 'Unreal Engine',
     description: 'Multiplayer racing game with spline movement and custom replication systems.',
-    image: '/images/projects/everride.jpg'
+    image: '/images/projects/everride2.jpg'
   },
   {
     title: 'Kinetic FPS',
