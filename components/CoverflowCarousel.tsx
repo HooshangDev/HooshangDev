@@ -26,6 +26,10 @@ export default function CoverflowCarousel({ images }: Props) {
   const snapTimer = useRef<number | null>(null)
   const initializedRef = useRef(false)
   
+
+const autoScrollRef = useRef<number | null>(null)
+const autoScrollStoppedRef = useRef(false)
+
   const loopedImages = useMemo(
     () => Array.from({ length: LOOP_COPIES }, () => images).flat(),
     [images]
@@ -134,7 +138,33 @@ export default function CoverflowCarousel({ images }: Props) {
 
     setVersion(null)
   }, [images])
+useEffect(() => {
+  const container = containerRef.current
 
+  if (!container) return
+
+  const speed = 1 // pixels per frame
+
+  const animate = () => {
+    if (
+      container &&
+      !autoScrollStoppedRef.current &&
+      !isDraggingRef.current
+    ) {
+      container.scrollLeft += speed
+    }
+
+    autoScrollRef.current = requestAnimationFrame(animate)
+  }
+
+  autoScrollRef.current = requestAnimationFrame(animate)
+
+  return () => {
+    if (autoScrollRef.current) {
+      cancelAnimationFrame(autoScrollRef.current)
+    }
+  }
+}, [])
   useEffect(() => {
     const container = containerRef.current
     if (!container) return
@@ -174,6 +204,7 @@ export default function CoverflowCarousel({ images }: Props) {
   const selectedOriginalIndex = ((selectedIndex % imageCount) + imageCount) % imageCount
 
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    autoScrollStoppedRef.current = true
     if (!containerRef.current) return
 
     if (snapTimer.current) {
