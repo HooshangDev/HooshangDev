@@ -23,7 +23,7 @@ export default function ImageCarousel({ images, className = '' }: ImageCarouselP
     <div className={`relative w-full h-full ${className}`}>
       <motion.div
         style={{ transform: 'rotateY(0deg)' }}
-        while={{ rotateY: 360 }}
+        animate={{ rotateY: 360 }}
         transition={{ duration: 20, ease: 'linear', repeat: Infinity }}
       >
         {images.map((src, index) => {

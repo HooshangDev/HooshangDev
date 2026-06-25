@@ -7,9 +7,11 @@ export const projects = [
     screenshots: [
       '/images/projects/rr_screenshot1.jpg',
       '/images/projects/rr_screenshot2.jpg',
-      '/images/projects/rr_screenshot3.jpg'
+      '/images/projects/rr_screenshot3.jpg',
+      '/images/projects/main-menu-rr-s.jpg',
+      '/images/projects/map۲-rr-s.jpg'
     ],
-    video: '/images/projects/rr_video.mp4'
+    video: '/videos/projects/rr_video.mp4'
   },
   {
     title: 'EverRide',
@@ -21,7 +23,7 @@ export const projects = [
       '/images/projects/everride2.jpg',
       '/images/projects/everride3.jpg'
     ],
-    video: '/images/projects/rr_video.mp4'
+    video: '/videos/projects/everride_vid.mp4'
   },
   {
     title: 'Kinetic FPS',
@@ -33,7 +35,7 @@ export const projects = [
       '/images/projects/kinetic.jpg',
       '/images/projects/kinetic.jpg'
     ],
-    video: '/images/projects/vr_kalleh.mp4'
+    video: '/videos/projects/kinetic.mp4'
   },
   {
     title: 'Detective Mehrdad',
@@ -42,9 +44,37 @@ export const projects = [
     image: '/images/projects/detective-mehrdad.jpg',
     screenshots: [
       '/images/projects/detective-mehrdad.jpg',
-      '/images/projects/detective-mehrdad.jpg',
-      '/images/projects/detective-mehrdad.jpg'
+      '/images/projects/detective0.png',
+      '/images/projects/detective1.png',
+      '/images/projects/detective2.png',
+      '/images/projects/detective3.png',
+      '/images/projects/detective4.png',
+      '/images/projects/detective5.png'
     ],
-    video: '/images/projects/rr_video.mp4'
+    video: '/videos/projects/detective.mp4'
+  },
+  
+  {
+    title: 'Kalleh Halloumi Cheese ,AdverGame',
+    engine: 'Unity',
+    description: 'A virtual reality marketing game developed for Kalleh Foods to promote their Halloumi Cheese product through an interactive cooking experience. Players enter a fully immersive VR kitchen where they prepare and cook Halloumi Cheese using realistic interactions, including grabbing, cutting, grilling, and serving ingredients.The project focused on delivering intuitive VR gameplay, realistic object interactions, and an engaging user experience that highlights the products features in a memorable way. I was responsible for implementing the gameplay systems, VR interactions, object physics, user interface integration, and overall technical development of the experience.',
+    image: '/images/projects/kalleh0.png',
+    screenshots: [
+      '/images/projects/kalleh0.png',
+      '/images/projects/kalleh1.png',
+      '/images/projects/kalleh2.png'
+    ],
+    video: '/videos/projects/vr_kalleh.mp4'
+  }
+  ,
+  {
+    title: 'Multiplayer Snake & Ladder',
+    engine: 'Unity',
+    description: 'An online multiplayer board game featuring matchmaking, real-time chat, multiple game sessions, and in-app purchases. Developed a server-authoritative dice system where dice outcomes are generated securely on the server and reproduced through realistic client-side physics simulation, ensuring both fair gameplay and visually authentic dice rolls. Implemented pawn movement systems, networking integration, and core gameplay mechanics using Unity and C#.',
+    image: '/images/projects/snakeLadder.png',
+    screenshots: [
+      
+    ],
+    video: '/videos/projects/snakeladder.mp4'
   }
 ]

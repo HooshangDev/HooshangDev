@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 interface Project {
   title: string
@@ -18,35 +19,61 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
+  const [imageSrc, setImageSrc] = useState(project.image)
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      setImageSrc(`${project.image}?v=${Date.now()}`)
+      return
+    }
+
+    setImageSrc(project.image)
+  }, [project.image])
+
   return (
-    <motion.div
-      whileHover={{ y: -5 }}
-      cursor="pointer"
+    <button
+      type="button"
       onClick={onSelect}
-      className="glass rounded-3xl overflow-hidden"
+      className="block w-full cursor-pointer text-left"
     >
-      <div className="h-60 bg-white/5 relative overflow-hidden">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 50vw"
-          loading="eager"
-          className="object-cover"
-        />
-      </div>
+      <motion.div
+        whileHover={{
+          y: -10,
+          scale: 1.02,
+        }}
+        transition={{
+          type: 'spring',
+          stiffness: 300,
+        }}
+        className="
+          glass
+          rounded-3xl
+          overflow-hidden
+        "
+      >
+        <div className="h-60 bg-white/5 relative overflow-hidden">
+          <Image
+            src={imageSrc}
+            alt={project.title}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            unoptimized
+            className="object-cover"
+          />
+        </div>
 
-      <div className="p-8">
-        <p className="text-blue-400 mb-2">{project.engine}</p>
+        <div className="p-8">
+          <p className="text-blue-400 mb-2">{project.engine}</p>
 
-        <h2 className="text-3xl font-bold mb-4">
-          {project.title}
-        </h2>
+          <h2 className="text-3xl font-bold mb-4">
+            {project.title}
+          </h2>
 
-        <p className="text-white/70">
-          {project.description}
-        </p>
-      </div>
-    </motion.div>
+          <p className="text-white/70">
+            {project.description}
+          </p>
+        </div>
+      </motion.div>
+    </button>
   )
 }
