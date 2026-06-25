@@ -8,12 +8,21 @@ interface Project {
   engine: string
   description: string
   image: string
+  screenshots: string[]
+  video: string
 }
 
-export default function ProjectCard({ project }: { project: Project }) {
+interface ProjectCardProps {
+  project: Project
+  onSelect: () => void
+}
+
+export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
   return (
     <motion.div
       whileHover={{ y: -5 }}
+      cursor="pointer"
+      onClick={onSelect}
       className="glass rounded-3xl overflow-hidden"
     >
       <div className="h-60 bg-white/5 relative overflow-hidden">
@@ -21,6 +30,8 @@ export default function ProjectCard({ project }: { project: Project }) {
           src={project.image}
           alt={project.title}
           fill
+          sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 50vw"
+          loading="eager"
           className="object-cover"
         />
       </div>
