@@ -1,96 +1,262 @@
-# Manouchehr Soltani — Vercel-Ready Portfolio Repository
+# Hi 👋 I'm Manouchehr Soltani
 
-## 🚀 Stack
+<div align="center">
 
-- Next.js 15+
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Vercel Deployment
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&center=true&vCenter=true&width=1000&lines=Gameplay+%26+Systems+Engineer;Unreal+Engine+%7C+Unity+Developer;Multiplayer+%26+Backend+Specialist;Building+Games+Since+2023" />
+
+</div>
 
 ---
 
-## 📁 Project Structure
+## 🎮 About Me
 
-```txt
-manouchehr-portfolio/
-├── app/
-│   ├── about/
-│   │   └── page.tsx
-│   ├── contact/
-│   │   └── page.tsx
-│   ├── experience/
-│   │   └── page.tsx
-│   ├── projects/
-│   │   └── page.tsx
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── Hero.tsx
-│   ├── Navbar.tsx
-│   ├── Footer.tsx
-│   ├── ProjectCard.tsx
-│   └── SectionTitle.tsx
-├── data/
-│   ├── projects.ts
-│   └── skills.ts
-├── public/
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-├── next.config.js
-├── postcss.config.js
-└── README.md
+```cpp
+class Manouchehr
+{
+public:
+
+    Engine[] Engines =
+    {
+        UnrealEngine,
+        Unity
+    };
+
+    Skill[] Skills =
+    {
+        Multiplayer,
+        Replication,
+        GameplaySystems,
+        BackendServices,
+        LiveOps,
+        ProceduralGeneration,
+        VRDevelopment
+    };
+
+    CurrentFocus =
+    {
+        MultiplayerArchitecture,
+        AnalyticsSystems,
+        UnrealEngineTooling,
+        VRDevelopement,
+        IndieGame
+    };
+};
 ```
 
 ---
 
-## ⚡ Getting Started
+## 🚀 Featured Projects
 
-### Installation
+### 🏎️ EverRide
 
-```bash
-npm install
-```
+Multiplayer online racing game developed in Unreal Engine.
 
-### Development
+✔ Custom replication system
 
-```bash
-npm run dev
-```
+✔ Physics-based racing mechanics
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+✔ Spline movement architecture
 
-### Build
+✔ JNI Android integrations
 
-```bash
-npm run build
-npm run start
-```
+✔ Dedicated server architecture
+
+✔ Mobile optimization
 
 ---
 
-## 🚀 Deploy to Vercel
+### 🔫 Kinetic (Urban Ranger)
 
-1. Push to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your GitHub repository
-4. Click Deploy
+Competitive multiplayer FPS.
 
----
+✔ Weapon systems
 
-## 🎯 Features
+✔ Grenades & usable items
 
-- ✅ AAA-style portfolio website
-- ✅ Recruiter-ready presentation
-- ✅ Mobile responsive UI
-- ✅ Vercel deployment ready
-- ✅ Modern game-dev aesthetic
-- ✅ Expandable architecture
+✔ Capture point gameplay
+
+✔ Team scoring systems
+
+✔ Character inventory systems
 
 ---
 
-## 📄 License
+### 🕵️ Detective Mehrdad
 
-MIT
+Live-service Unity game.
+
+✔ Event system
+
+✔ Economy & progression
+
+✔ Remote Config
+
+✔ Node.js backend
+
+✔ Data migration systems
+
+✔ Inventory & cosmetics
+
+---
+
+### ♿ Wheelchair Recoil Survival Game
+
+Personal Unreal Engine project.
+
+✔ Physics-driven movement
+
+✔ Weapon & inventory systems
+
+✔ Multiplayer-ready architecture
+
+✔ Co-op survival gameplay
+
+✔ Weapon upgrade systems
+
+✔ Exploration & progression systems
+
+✔ Physics-based character controller
+
+---
+
+### 🧀 Kalleh VR Cooking Experience
+
+VR training and product showcase experience developed for Kalleh, focused on Halloumi cheese preparation.
+
+✔ VR interaction framework
+
+✔ Interactive cooking workflow
+
+✔ Guided tutorial system
+
+✔ Teleportation & smooth locomotion
+
+✔ Audio feedback system
+
+✔ Cooking timers & task progression
+
+✔ Pick-up & grab interactions
+
+✔ Ingredient mixing mechanics
+
+✔ VR UI implementation
+
+✔ Interactive cooking tools
+
+---
+
+### 🚀 Space Garage VR Prototype
+
+Experimental VR project set inside a floating garage in outer space.
+
+Implemented a complete guided onboarding experience where players learn to repair and activate a spaceship through interactive objectives.
+
+✔ Custom tutorial framework architecture
+
+✔ Dynamic world-space popups
+
+✔ Object tracking tutorial widgets
+
+✔ Bezier-curve guidance system
+
+✔ Runtime popup positioning system
+
+✔ Flexible single-instance tutorial manager
+
+✔ Success & failure condition handling
+
+✔ Event-driven progression system
+
+✔ VR interaction systems
+
+#### Gameplay Flow
+
+✔ Pick up spaceship battery
+
+✔ Insert battery into spaceship power socket
+
+✔ Collect screws individually
+
+✔ Tighten screws using an air wrench
+
+✔ Complete guided repair sequence
+
+✔ Launch and activate the spaceship
+
+#### Technical Highlights
+
+✔ Tutorial steps callable from any gameplay system
+
+✔ Generic fail-state architecture
+
+✔ Reusable objective framework
+
+✔ Dynamic target tracking
+
+✔ World-space instructional UI
+
+✔ Modular VR gameplay architecture
+
+✔ Physics-driven interactions
+
+✔ Scalable onboarding system for future VR experiences
+
+---
+
+## 🛠️ Tech Stack
+
+### Game Development
+
+![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-313131?style=for-the-badge\&logo=unrealengine)
+![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge\&logo=unity)
+
+### Programming
+
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge\&logo=cplusplus)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge\&logo=csharp)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js)
+
+### Backend & Analytics
+
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge\&logo=sqlite)
+
+---
+
+## 📊 GitHub Analytics
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=HooshangDev\&show_icons=true\&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=HooshangDev\&layout=compact\&hide_border=true)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=HooshangDev\&hide_border=true)
+
+---
+
+## 📈 Contribution Graph
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=HooshangDev)
+
+---
+
+## 🎯 Current Focus
+
+* Firebase Push Notifications
+* Metrix Analytics Integration
+* Multiplayer Networking
+* Unreal Engine Gameplay Frameworks
+* Procedural Generation Systems
+
+---
+
+## ⚡ Fun Fact
+
+I once had to implement missing Android marketplace functionality for Unreal Engine by bridging Java → JNI → C++ because the official plugin didn't exist.
+
+---
+
+<div align="center">
+
+### 🎮 Building Games, Systems & Multiplayer Experiences
+
+</div>
