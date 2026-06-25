@@ -24,7 +24,8 @@ export default function CoverflowCarousel({ images }: Props) {
   const dragStartScrollLeft = useRef(0)
   const dragMoved = useRef(false)
   const snapTimer = useRef<number | null>(null)
-
+  const initializedRef = useRef(false)
+  
   const loopedImages = useMemo(
     () => Array.from({ length: LOOP_COPIES }, () => images).flat(),
     [images]
@@ -116,13 +117,14 @@ export default function CoverflowCarousel({ images }: Props) {
   }, [scrollToIndex, updateSelectedFromScroll])
 
   useEffect(() => {
-    const initialIndex = middleStartIndex
-    setSelectedIndex(initialIndex)
+  const initialIndex = 0
+  setSelectedIndex(initialIndex)
 
-    requestAnimationFrame(() => {
-      scrollToIndex(initialIndex, 'auto')
-    })
-  }, [images, middleStartIndex, scrollToIndex])
+  requestAnimationFrame(() => {
+    scrollToIndex(initialIndex, 'auto')
+    initializedRef.current = true
+  })
+}, [images, middleStartIndex, scrollToIndex])
 
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {
@@ -138,16 +140,21 @@ export default function CoverflowCarousel({ images }: Props) {
     if (!container) return
 
     const handleScroll = () => {
-      updateSelectedFromScroll()
+  if (!initializedRef.current) return
 
-      if (snapTimer.current) {
-        clearTimeout(snapTimer.current)
-      }
+  updateSelectedFromScroll()
 
-      if (!isDragging) {
-        snapTimer.current = window.setTimeout(snapToCenteredImage, 140)
-      }
-    }
+  if (snapTimer.current) {
+    clearTimeout(snapTimer.current)
+  }
+
+  if (!isDragging) {
+    snapTimer.current = window.setTimeout(
+      snapToCenteredImage,
+      140
+    )
+  }
+}
 
     container.addEventListener('scroll', handleScroll, { passive: true })
 
