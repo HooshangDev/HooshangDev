@@ -28,7 +28,7 @@ export default function CoverflowCarousel({ images }: Props) {
   
 
 const autoScrollRef = useRef<number | null>(null)
-const autoScrollStoppedRef = useRef(false)
+const autoScrollStoppedRef = useRef(true)
 
   const loopedImages = useMemo(
     () => Array.from({ length: LOOP_COPIES }, () => images).flat(),
