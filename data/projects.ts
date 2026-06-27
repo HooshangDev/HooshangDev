@@ -111,7 +111,7 @@ Built within one week.\
     title: 'Multiplayer Snake & Ladder',
     engine: 'Unity',
     description: 'An online multiplayer board game featuring matchmaking, real-time chat, multiple game sessions, and in-app purchases. Developed a server-authoritative dice system where dice outcomes are generated securely on the server and reproduced through realistic client-side physics simulation, ensuring both fair gameplay and visually authentic dice rolls. Implemented pawn movement systems, networking integration, and core gameplay mechanics using Unity and C#.',
-    image: '/images/projects/snakeLadder.png',
+    image: '/images/projects/dice_cool.jpg',
     screenshots: [
       
     ],
