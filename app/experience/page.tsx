@@ -1,114 +1,323 @@
+import Project from '@/components/Project'
+
 export default function ExperiencePage() {
+  const techStack = [
+    "Unreal Engine 5",
+    "Unity",
+    "C++",
+    "C#",
+    "Blueprints",
+    "Node.js",
+    "Firebase",
+    "SQLite",
+    "MySQL",
+    "Java",
+    "JNI",
+    "Dedicated Servers",
+    "Multiplayer",
+    "VR",
+    "Android",
+    "Live Ops",
+    "Game Analytics",
+    "Git",
+  ]
+
+  const stats = [
+    { value: "7+", label: "Commercial Projects" },
+    { value: "4+", label: "Years Experience" },
+    { value: "3", label: "Published Games" },
+    { value: "2", label: "Game Engines" },
+  ]
+
   return (
-    <main className="max-w-5xl mx-auto px-6 py-20">
-      <h1 className="text-6xl font-black mb-16">
-        Experience
-      </h1>
+    <main className="max-w-7xl mx-auto px-6 py-20">
 
-      <div className="space-y-8">
-        <section className="glass rounded-3xl p-10">
-          <h2 className="text-3xl font-bold mb-4">
-            Manataz Studio
-          </h2>
+      {/* Hero */}
 
-          <p className="text-blue-400 mb-6">
-            Gameplay & Systems Engineer — 2023–2025
-          </p>
+      <section className="mb-20">
 
-          <div className="space-y-8 text-white/80">
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                EverRide (formerly RogueRider) — Unreal Engine Multiplayer Racing Game
-              </h3>
-              <ul className="space-y-2 list-disc list-inside">
-                <li>Designed and implemented full racing gameplay systems including nitro, drifting mechanics, AI/player interaction, and procedural track generation.</li>
-                <li>Built spline-based vehicle movement, hybrid physics controller, and dynamic drift scoring.</li>
-                <li>Designed custom replication system for real-time racing and a transform-buffer-based synchronization system.</li>
-                <li>Integrated Android marketplace systems (Bazaar), developed missing Unreal Engine plugins (Java + Android SDK, JNI bridge, AndroidManifest modifications), and implemented IAP, version control, and store API integration.</li>
-                <li>Implemented server-side SQLite data storage and managed player state synchronization.</li>
-                <li>Owned UI, gameplay, backend integration, database, and server logic systems.</li>
-              </ul>
+        <p className="uppercase tracking-[0.35em] text-blue-400 font-semibold">
+          Gameplay & Systems Engineer
+        </p>
+
+        <h1 className="text-7xl font-black mt-4 leading-none">
+          Commercial
+          <br />
+          Game Development
+        </h1>
+
+        <p className="max-w-4xl mt-8 text-xl text-white/70 leading-relaxed">
+          4+ years developing commercial multiplayer games,
+          VR experiences, backend infrastructure and live-service
+          systems using Unreal Engine and Unity.
+        </p>
+
+      </section>
+
+      {/* Tech */}
+
+      <section className="mb-20">
+
+        <h2 className="text-2xl font-bold mb-8">
+          Tech Stack
+        </h2>
+
+        <div className="flex flex-wrap gap-3">
+
+          {techStack.map((item) => (
+            <div
+              key={item}
+              className="glass rounded-full px-4 py-2 text-sm font-medium hover:scale-105 transition"
+            >
+              {item}
             </div>
+          ))}
 
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                Kinetic (Urban Ranger) — Unreal Engine Multiplayer FPS
-              </h3>
-              <ul className="space-y-2 list-disc list-inside">
-                <li>Built weapon systems including guns, grenades, and usable items.</li>
-                <li>Implemented team deathmatch + capture point hybrid gameplay.</li>
-                <li>Developed kill/objective-based scoring and win/loss logic.</li>
-                <li>Created character selection, inventory, and loadout management systems.</li>
-                <li>Designed capture point control with passive scoring and objective-based multiplayer loop.</li>
-              </ul>
-            </div>
+        </div>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                Detective Mehrdad — Unity Engine Live Ops Game Takeover
-              </h3>
-              <ul className="space-y-2 list-disc list-inside">
-                <li>Took over an undocumented Unity codebase and onboarded independently.</li>
-                <li>Implemented hidden object gameplay, mission and reward system, event-based gameplay framework, and slot machine-style daily reward.</li>
-                <li>Integrated Node.js backend server, player data management, migration to server-based architecture, and server-side purchase validation.</li>
-                <li>Built remote configuration systems for balancing, event rules, item availability, and offer management.</li>
-                <li>Implemented avatar, inventory, clothing/cosmetic, and rank-based item unlocking systems.</li>
-                <li>Handled player data migration, data consistency fixes, and server-authoritative data flow.</li>
-              </ul>
-            </div>
+      </section>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                Kaleh VR Cooking Experience — Unity VR Advergaming Project
-              </h3>
-              <ul className="space-y-2 list-disc list-inside">
-                <li>Took over development leadership, guided implementation and debugging, and delivered the VR cooking experience.</li>
-                <li>Built customer registration and OTP verification system for event participation tracking and marketing CRM.</li>
-                <li>Worked on VR interaction systems, technical leadership, and client-facing delivery.</li>
-              </ul>
-            </div>
+      {/* Stats */}
 
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                Chimpanzini Bananini — Node.js Advergaming Backend
-              </h3>
-              <ul className="space-y-2 list-disc list-inside">
-                <li>Built backend system for player registration, phone number storage, and gameplay user tracking.</li>
-                <li>Developed item-combination progression logic.</li>
-                <li>Implemented Excel export system for lottery selection and marketing campaign reporting.</li>
-                <li>Enabled client-side winner selection workflows.</li>
-              </ul>
-            </div>
+      <section className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
 
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                Additional Advergaming Backend Systems
-              </h3>
-              <ul className="space-y-2 list-disc list-inside">
-                <li>Built Node.js backend infrastructure for multiple advergames.</li>
-                <li>Managed user tracking, data storage, and campaign reporting systems.</li>
-              </ul>
-            </div>
+        {stats.map((stat) => (
+
+          <div
+            key={stat.label}
+            className="glass rounded-3xl p-8 text-center"
+          >
+
+            <h3 className="text-5xl font-black text-blue-400">
+              {stat.value}
+            </h3>
+
+            <p className="mt-2 text-white/70">
+              {stat.label}
+            </p>
+
           </div>
-        </section>
 
-        <section className="glass rounded-3xl p-10">
-          <h2 className="text-3xl font-bold mb-4">
-            Current Work
-          </h2>
+        ))}
 
-          <p className="text-blue-400 mb-6">
-            2026
-          </p>
+      </section>
 
-          <ul className="space-y-3 text-white/80 list-disc list-inside">
-            <li>Firebase push notification implementation</li>
-            <li>Metrix analytics SDK integration</li>
-            <li>Expansion of internal game analytics</li>
-            <li>Unified event tracking across systems</li>
-          </ul>
-        </section>
-      </div>
+      {/* Experience */}
+
+      <section className="space-y-10">
+
+        <Project
+          title="EverRide"
+          subtitle="Released • March 18, 2025"
+          engine="Unreal Engine"
+          featured
+          bullets={[
+            "Solo developed the complete gameplay architecture from prototype to release.",
+            "Designed multiplayer replication and transform-buffer synchronization.",
+            "Implemented physics-based vehicles, drifting and spline movement.",
+            "Integrated Bazaar Android SDK using custom Java, JNI and Unreal plugins.",
+            "Developed gameplay systems, UI, backend integration, dedicated server logic and SQLite database.",
+            "Optimized mobile performance and shipped commercial release.",
+          ]}
+          skills={[
+            "Unreal",
+            "C++",
+            "Networking",
+            "JNI",
+            "SQLite",
+            "Optimization",
+          ]}
+        />
+
+        <Project
+          title="Rogue Rider"
+          subtitle="Published • Later redesigned into EverRide"
+          engine="Unreal Engine"
+          bullets={[
+            "Original online racing game.",
+            "Implemented multiplayer gameplay systems.",
+            "Created the technical foundation later evolved into EverRide.",
+          ]}
+          skills={["Gameplay", "Networking", "Mobile"]}
+        />
+
+        <Project
+          title="Kinetic (Urban Ranger)"
+          subtitle="Multiplayer FPS"
+          engine="Unreal Engine"
+          bullets={[
+            "Implemented weapons, grenades and inventory systems.",
+            "Developed capture-point multiplayer gameplay.",
+            "Built scoring, objectives and match flow.",
+          ]}
+          skills={[
+            "FPS",
+            "Gameplay",
+            "Replication",
+          ]}
+        />
+
+        <Project
+          title="Detective Mehrdad"
+          subtitle="Released • November 2025"
+          engine="Unity"
+          featured
+          bullets={[
+            "Took ownership of an undocumented production codebase.",
+            "Built Live Ops systems including events, missions and progression.",
+            "Integrated Node.js backend and Bazaar IAP.",
+            "Developed remote configuration and server-authoritative progression.",
+            "Implemented cosmetics, inventory, avatar and daily rewards.",
+          ]}
+          skills={[
+            "Unity",
+            "Node.js",
+            "Live Ops",
+            "Backend",
+          ]}
+        />
+
+        <Project
+          title="Kalleh VR Cooking"
+          subtitle="VR Advertisement"
+          engine="Unity"
+          bullets={[
+            "Led development completion.",
+            "Mentored junior developer.",
+            "Implemented VR gameplay interactions.",
+          ]}
+          skills={[
+            "VR",
+            "Unity",
+            "XR",
+          ]}
+        />
+
+        <Project
+          title="Kalleh Verification Platform"
+          subtitle="Client + Server"
+          engine="Node.js"
+          bullets={[
+            "Built OTP verification platform.",
+            "Implemented registration workflow.",
+            "Managed customer event data.",
+          ]}
+          skills={[
+            "Node.js",
+            "OTP",
+            "Backend",
+          ]}
+        />
+
+        <Project
+          title="Merge Campaign Backend"
+          subtitle="Node.js"
+          engine="Backend"
+          bullets={[
+            "Built backend for merge advertisement game.",
+            "Implemented Excel export system.",
+            "Designed player registration and lottery workflows.",
+          ]}
+          skills={[
+            "Node.js",
+            "Backend",
+            "Excel",
+          ]}
+        />
+
+      </section>
+
+      {/* Personal */}
+
+      <section className="mt-24">
+
+        <h2 className="text-4xl font-black mb-10">
+          Personal Projects
+        </h2>
+
+        <Project
+          title="Wheelchair Recoil Survival"
+          subtitle="In Development"
+          engine="Unreal Engine"
+          featured
+          bullets={[
+            "Physics-driven wheelchair movement.",
+            "Weapon and inventory systems.",
+            "Replication-ready multiplayer architecture.",
+            "Co-op survival gameplay.",
+          ]}
+        />
+
+        <Project
+          title="Procedural Maze Generator"
+          subtitle="Reusable Unreal Template"
+          engine="Unreal Engine"
+          bullets={[
+            "Optimized procedural maze generation algorithm.",
+            "Reusable framework for future games.",
+          ]}
+        />
+
+        <Project
+          title="VR Spaceship Prototype"
+          subtitle="Built in one week"
+          engine="Unity VR"
+          bullets={[
+            "Modular tutorial framework.",
+            "Step completion and fail system.",
+            "Floating draggable VR UI.",
+            "Bezier guidance lines.",
+            "Singleton audio manager.",
+            "Currently expanding with spaceship flight and battery systems.",
+          ]}
+        />
+        <Project
+  title="Multiplayer Snake & Ladder"
+  subtitle="Online Multiplayer Board Game"
+  engine="Unity"
+  featured
+  bullets={[
+    "Developed an online multiplayer board game with matchmaking, real-time chat, multiple concurrent game sessions, and in-app purchases.",
+    "Designed a server-authoritative dice system where roll outcomes are generated securely on the server.",
+    "Implemented realistic client-side physics simulation that reproduces predetermined dice values while maintaining visual authenticity.",
+    "Built pawn movement, networking integration, and core gameplay systems using Unity and C#.",
+    "Focused on fair multiplayer gameplay by combining authoritative server logic with believable physics-based dice behavior.",
+  ]}
+  skills={[
+    "Unity",
+    "C#",
+    "Multiplayer",
+    "Networking",
+    "Physics",
+    "Matchmaking",
+    "In-App Purchases",
+    "Gameplay Systems",
+  ]}
+/>
+      </section>
+
+      {/* Current */}
+
+      <section className="glass rounded-3xl p-10 mt-24">
+
+        <h2 className="text-3xl font-bold mb-6">
+          Current Focus
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-4 text-white/80">
+
+          <div>✓ Firebase Push Notifications</div>
+          <div>✓ Metrix Analytics SDK</div>
+          <div>✓ GameAnalytics Integration</div>
+          <div>✓ Live Ops Infrastructure</div>
+          <div>✓ Multiplayer Systems</div>
+          <div>✓ VR Gameplay Development</div>
+
+        </div>
+
+      </section>
+
     </main>
   )
 }
+
