@@ -6,12 +6,14 @@ export default function HomePage() {
       <Hero />
 
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
           {[
             'Multiplayer Systems',
             'Physics Gameplay',
             'Backend Engineering',
-            'Procedural Generation'
+            'Procedural Generation',
+            'VR Interaction Systems',
+            'Assessment Tooling'
           ].map((item) => (
             <div
               key={item}

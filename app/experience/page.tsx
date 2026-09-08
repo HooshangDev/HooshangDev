@@ -16,6 +16,11 @@ export default function ExperiencePage() {
     "Dedicated Servers",
     "Multiplayer",
     "VR",
+    "XR Interaction Toolkit",
+    "DOTween",
+    "Shader Graph",
+    "ScriptableObjects",
+    "UnityEvents",
     "Android",
     "Live Ops",
     "Game Analytics",
@@ -190,6 +195,60 @@ export default function ExperiencePage() {
             "VR",
             "Unity",
             "XR",
+          ]}
+        />
+
+        <Project
+          title="Farhangian VR Science Lab"
+          subtitle="Unity VR training platform"
+          engine="Unity / XR Interaction Toolkit"
+          featured
+          bullets={[
+            "Built guided chemistry workflows for TLC, caffeine and permanganate experiments.",
+            "Connected reusable task and sub-task data to scene interactions, feedback and completion logic.",
+            "Implemented custom sockets, placement hints, animation states and failure handling for spills, breakage and wrong grabs.",
+            "Added Inspector-configurable interaction events and reusable completion callbacks.",
+          ]}
+          skills={[
+            "Unity",
+            "C#",
+            "XR",
+            "Task Systems",
+            "Physics",
+          ]}
+        />
+
+        <Project
+          title="Interactive Physics Experiments"
+          subtitle="F=ma, spring impact and pendulum modules"
+          engine="Unity / C#"
+          bullets={[
+            "Developed F=ma cart and spring-impact controllers with runtime mass changes and calculated motion results.",
+            "Implemented damped pendulum simulation with VR length dragging, constrained snapping and completion events.",
+            "Built checkpoint timing, velocity sampling and before/after impact measurement capture for experiment feedback.",
+          ]}
+          skills={[
+            "Physics",
+            "Measurement",
+            "DOTween",
+            "VR Interaction",
+          ]}
+        />
+
+        <Project
+          title="XR Task & Assessment Framework"
+          subtitle="Reusable gameplay infrastructure"
+          engine="Unity / C#"
+          bullets={[
+            "Expanded the task manager with timer, time-check and value-measure action types.",
+            "Built automatic task generation and Inspector-configurable per-action tracking and completion behavior.",
+            "Added custom done-signal bindings, socket lifecycle events and a rotational shake detector for reusable training interactions.",
+          ]}
+          skills={[
+            "Gameplay Systems",
+            "ScriptableObjects",
+            "UnityEvents",
+            "Tooling",
           ]}
         />
 

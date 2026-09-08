@@ -26,9 +26,9 @@ export default function Hero() {
 
           <p className="text-white/70 text-xl leading-relaxed max-w-xl mb-10">
             Gameplay & Systems Engineer specializing in multiplayer,
-            physics-driven gameplay, backend systems, procedural generation,
-            and creating polished gameplay experiences with Unreal Engine and
-            Unity.
+            physics-driven gameplay, VR interaction systems, backend
+            architecture, and creating polished gameplay experiences with
+            Unreal Engine and Unity.
           </p>
 
           <div className="flex flex-wrap gap-4">

@@ -1,4 +1,77 @@
-export const projects = [
+export interface Project {
+  title: string
+  engine: string
+  description: string
+  image?: string
+  screenshots: string[]
+  video?: string
+  highlights?: string[]
+  cover?: {
+    eyebrow: string
+    title: string
+    detail: string
+    accent: string
+  }
+}
+
+export const projects: Project[] = [
+  {
+    title: 'Farhangian VR Science Lab',
+    engine: 'Unity / XR Interaction Toolkit',
+    description: 'A guided VR laboratory experience built around authored, repeatable science tasks. I developed the chemistry workflows for TLC, caffeine, and permanganate experiments, then connected the scene interactions to reusable task data, feedback, animation, and completion logic.',
+    screenshots: [],
+    highlights: [
+      'Chemistry workflows for TLC, caffeine, and permanganate experiments',
+      'Reusable task and sub-task authoring with ScriptableObjects',
+      'Custom socket interactions, placement hints, and completion callbacks',
+      'Failure-aware interactions for spills, breakage, and wrong grabs',
+      'Animated lab equipment and guided feedback states',
+    ],
+    cover: {
+      eyebrow: 'VR TRAINING SYSTEMS',
+      title: 'Science Lab / Guided Tasks',
+      detail: 'Chemistry workflows · XR interactions · feedback systems',
+      accent: '#22d3ee',
+    },
+  },
+  {
+    title: 'Interactive Physics Experiments',
+    engine: 'Unity / C#',
+    description: 'A collection of interactive physics modules for the Farhangian lab, including F=ma carts, spring-impact experiments, and pendulum measurement. I implemented the experiment logic, tunable mass and motion systems, measurement checkpoints, and VR controls for changing pendulum length and release conditions.',
+    screenshots: [],
+    highlights: [
+      'F=ma cart and spring-impact experiment controllers',
+      'Runtime mass changes with calculated velocity, momentum, and energy results',
+      'Pendulum simulation with damping and configurable gravity',
+      'VR length dragging with constrained snapping and completion events',
+      'Checkpoint timing, velocity sampling, and before/after impact capture',
+    ],
+    cover: {
+      eyebrow: 'PHYSICS / MEASUREMENT',
+      title: 'Motion Lab / Measured Systems',
+      detail: 'F=ma · pendulum · velocity and impact analysis',
+      accent: '#f59e0b',
+    },
+  },
+  {
+    title: 'XR Task & Assessment Framework',
+    engine: 'Unity / C#',
+    description: 'Reusable gameplay infrastructure for turning VR interactions into assessable training flows. I expanded the task manager with timer and measurement actions, per-action configuration, custom done-signal bindings, automatic scene task generation, and inspector-configurable interaction events.',
+    screenshots: [],
+    highlights: [
+      'Auto-generated task and sub-task wiring for complex scenes',
+      'Timer, time-check, and value-measure action types',
+      'Inspector-configurable per-action tracking and completion behavior',
+      'Custom UnityEvent and callback bindings for scene systems',
+      'Reusable shake detection and socket activation lifecycle events',
+    ],
+    cover: {
+      eyebrow: 'GAMEPLAY INFRASTRUCTURE',
+      title: 'Task Manager / Assessment Layer',
+      detail: 'Authoring tools · runtime callbacks · measurable progress',
+      accent: '#a78bfa',
+    },
+  },
   {
     title: 'RogueRider(Developed Solo)',
     engine: 'Unreal Engine',
