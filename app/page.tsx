@@ -1,8 +1,10 @@
 import Hero from '@/components/Hero'
+import VisitorPanel from '@/components/VisitorPanel'
 
 export default function HomePage() {
   return (
     <main>
+      <VisitorPanel />
       <Hero />
 
       <section className="max-w-7xl mx-auto px-6 py-20">
