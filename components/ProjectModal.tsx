@@ -20,14 +20,32 @@ export default function ProjectModal({
   onClose,
 }: ProjectModalProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
   const [imageSrc, setImageSrc] = useState(project.image)
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow
+    const previousFocus = document.activeElement as HTMLElement | null
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose()
+      if (event.key === 'Tab') {
+        const elements = dialogRef.current?.querySelectorAll<HTMLElement>('button, a[href], video[controls], [tabindex="0"]')
+        if (!elements?.length) return
+        const first = elements[0]
+        const last = elements[elements.length - 1]
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus() }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus() }
+      }
+    }
     document.body.style.overflow = 'hidden'
+    closeRef.current?.focus()
+    document.addEventListener('keydown', handleKeyDown)
 
     return () => {
       document.body.style.overflow = previousOverflow
+      document.removeEventListener('keydown', handleKeyDown)
+      previousFocus?.focus()
 
       if (videoRef.current) {
         videoRef.current.pause()
@@ -50,6 +68,10 @@ export default function ProjectModal({
       onClick={onClose}
     >
       <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={project.title}
         onClick={(e) => e.stopPropagation()}
         className="
           relative
@@ -63,6 +85,8 @@ export default function ProjectModal({
         "
       >
         <button
+          ref={closeRef}
+          aria-label="Close project details"
           onClick={onClose}
           className="
             sticky
@@ -79,37 +103,37 @@ export default function ProjectModal({
         </button>
 
         {/* HERO IMAGE */}
-        <section className="relative h-[500px]">
-          <img
+        <section className={`relative ${project.image ? 'h-[350px] sm:h-[500px]' : 'min-h-60'}`}>
+          {project.image && <img
             src={imageSrc}
             alt={project.title}
             className="w-full h-full object-cover"
-          />
+          />}
 
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-black/40 to-transparent" />
 
-          <div className="absolute bottom-10 left-10">
+          <div className="absolute bottom-8 left-6 right-6 sm:left-10 sm:right-10">
             <p className="text-blue-400 text-lg mb-2">
               {project.engine}
             </p>
 
-            <h1 className="text-6xl font-black text-white">
+            <h1 className="text-3xl sm:text-6xl font-black text-white">
               {project.title}
             </h1>
           </div>
         </section>
 
         {/* SCREENSHOTS */}
-        <section className="px-10 py-16">
+        {project.screenshots.length > 0 && <section className="px-6 sm:px-10 py-10">
           <h2 className="text-3xl font-bold text-white mb-8">
             Screenshots
           </h2>
 
           <CoverflowCarousel key={project.title} images={project.screenshots} />
-        </section>
+        </section>}
 
         {/* VIDEO */}
-        <section className="px-10 py-16">
+        {project.video && <section className="px-6 sm:px-10 py-10">
           <h2 className="text-3xl font-bold text-white mb-8">
             Gameplay
           </h2>
@@ -129,7 +153,7 @@ export default function ProjectModal({
               border-white/10
             "
           />
-        </section>
+        </section>}
 
         {/* DESCRIPTION */}
         <section className="px-10 pb-20">

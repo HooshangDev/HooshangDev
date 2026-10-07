@@ -51,7 +51,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
           overflow-hidden
         "
       >
-        <div className="h-60 bg-white/5 relative overflow-hidden">
+        {project.image && <div className="h-60 bg-white/5 relative overflow-hidden">
           <Image
             src={imageSrc}
             alt={project.title}
@@ -60,7 +60,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
             unoptimized
             className="object-cover"
           />
-        </div>
+        </div>}
 
         <div className="p-8">
           <p className="text-blue-400 mb-2">{project.engine}</p>

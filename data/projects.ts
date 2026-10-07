@@ -1,4 +1,8 @@
+import { featuredGame } from './featuredGame'
+import { labProject } from './labProject'
+
 export const projects = [
+  labProject,
   {
     title: 'RogueRider(Developed Solo)',
     engine: 'Unreal Engine',
@@ -107,15 +111,6 @@ Built within one week.\
     video: '/videos/projects/VR_test.mp4'
   }
   ,
-  {
-    title: 'Multiplayer Snake & Ladder',
-    engine: 'Unity',
-    description: 'An online multiplayer board game featuring matchmaking, real-time chat, multiple game sessions, and in-app purchases. Developed a server-authoritative dice system where dice outcomes are generated securely on the server and reproduced through realistic client-side physics simulation, ensuring both fair gameplay and visually authentic dice rolls. Implemented pawn movement systems, networking integration, and core gameplay mechanics using Unity and C#.',
-    image: '/images/projects/dice_cool.jpg',
-    screenshots: [
-      
-    ],
-    video: '/videos/projects/snakeladder.mp4'
-  }
+  featuredGame
 
 ]

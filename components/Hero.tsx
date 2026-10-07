@@ -18,7 +18,7 @@ export default function Hero() {
             Unreal / Unity Developer
           </p>
 
-          <h1 className="text-6xl md:text-8xl font-black leading-none mb-6">
+          <h1 className="text-5xl sm:text-6xl xl:text-8xl font-black leading-none mb-6">
             Manouchehr
             <br />
             Soltani
@@ -32,6 +32,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
+            <a href="#snake-quizz-ladder" className="px-8 py-4 bg-lime-300 text-zinc-950 rounded-full font-semibold hover:bg-lime-200 transition">Discover Snake Quizz Ladder</a>
             <a
               href="/projects"
               className="px-8 py-4 bg-white text-black rounded-full font-semibold hover:scale-105 transition"
@@ -62,7 +63,7 @@ export default function Hero() {
             {/* Image Frame */}
             <div className="relative w-full h-full rounded-full overflow-hidden border border-white/10 bg-white/5 backdrop-blur-lg shadow-2xl">
               <Image
-                src="/me.HEIC"
+                src="/me.jpg"
                 alt="Manouchehr Soltani"
                 fill
                 priority

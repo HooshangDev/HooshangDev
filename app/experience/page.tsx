@@ -1,4 +1,6 @@
 import Project from '@/components/Project'
+import { featuredGame } from '@/data/featuredGame'
+import { labProject } from '@/data/labProject'
 
 export default function ExperiencePage() {
   const techStack = [
@@ -40,7 +42,7 @@ export default function ExperiencePage() {
           Gameplay & Systems Engineer
         </p>
 
-        <h1 className="text-7xl font-black mt-4 leading-none">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black mt-4 leading-none">
           Commercial
           <br />
           Game Development
@@ -105,6 +107,17 @@ export default function ExperiencePage() {
       {/* Experience */}
 
       <section className="space-y-10">
+        <Project
+          title={labProject.title}
+          subtitle="Latest work experience · Lab development"
+          engine={labProject.engine}
+          bullets={[
+            "Worked on framework setup and day-to-day lab development.",
+            "Reorganized existing components and integrated changes across the project.",
+            "Maintained and adapted the existing project structure as requirements changed.",
+          ]}
+          skills={["Framework Development", "Integration", "Maintenance"]}
+        />
 
         <Project
           title="EverRide"
@@ -229,11 +242,27 @@ export default function ExperiencePage() {
 
       {/* Personal */}
 
-      <section className="mt-24">
+      <section className="mt-24 space-y-10">
 
         <h2 className="text-4xl font-black mb-10">
           Personal Projects
         </h2>
+
+        <Project
+          title={featuredGame.title}
+          subtitle="Personal indie game · Approaching a playable demo"
+          engine="Unity + Node.js"
+          image={featuredGame.image}
+          featured
+          bullets={[
+            "Developing a multiplayer snakes-and-ladders game with quiz challenges and category trophy progression.",
+            "Built server-authoritative dice outcomes with physics-driven client animation and networked pawn movement.",
+            "Added friends, requests, real-time chat and clubs with member profiles and shared trophy totals.",
+            "Implemented a remotely configured cosmetics shop, inventory and equipped player loadouts.",
+            "Current focus: bringing these systems together for the playable demo.",
+          ]}
+          skills={["Unity", "C#", "Node.js", "Multiplayer", "Quiz Systems", "Social Systems"]}
+        />
 
         <Project
           title="Wheelchair Recoil Survival"
@@ -271,29 +300,7 @@ export default function ExperiencePage() {
             "Currently expanding with spaceship flight and battery systems.",
           ]}
         />
-        <Project
-  title="Multiplayer Snake & Ladder"
-  subtitle="Online Multiplayer Board Game"
-  engine="Unity"
-  featured
-  bullets={[
-    "Developed an online multiplayer board game with matchmaking, real-time chat, multiple concurrent game sessions, and in-app purchases.",
-    "Designed a server-authoritative dice system where roll outcomes are generated securely on the server.",
-    "Implemented realistic client-side physics simulation that reproduces predetermined dice values while maintaining visual authenticity.",
-    "Built pawn movement, networking integration, and core gameplay systems using Unity and C#.",
-    "Focused on fair multiplayer gameplay by combining authoritative server logic with believable physics-based dice behavior.",
-  ]}
-  skills={[
-    "Unity",
-    "C#",
-    "Multiplayer",
-    "Networking",
-    "Physics",
-    "Matchmaking",
-    "In-App Purchases",
-    "Gameplay Systems",
-  ]}
-/>
+
       </section>
 
       {/* Current */}
@@ -320,4 +327,3 @@ export default function ExperiencePage() {
     </main>
   )
 }
-

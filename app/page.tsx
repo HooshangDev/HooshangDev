@@ -1,9 +1,13 @@
 import Hero from '@/components/Hero'
+import FeaturedGame from '@/components/FeaturedGame'
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
+      <div className="max-w-7xl mx-auto px-6 pt-8">
+        <FeaturedGame />
+      </div>
 
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-4 gap-6">

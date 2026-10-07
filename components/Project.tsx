@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 interface ProjectProps {
   title: string
@@ -9,6 +10,7 @@ interface ProjectProps {
   bullets: string[]
   skills?: string[]
   featured?: boolean
+  image?: string
 }
 
 export default function Project({
@@ -18,6 +20,7 @@ export default function Project({
   bullets,
   skills = [],
   featured = false,
+  image,
 }: ProjectProps) {
   return (
     <motion.article
@@ -31,6 +34,7 @@ export default function Project({
           : 'border-white/10'
       }`}
     >
+      {image && <Image src={image} alt={title} width={1536} height={1024} sizes="(max-width: 768px) 100vw, 75vw" className="mb-8 max-h-96 w-full rounded-2xl object-contain bg-black/20" />}
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
         <div className="flex-1">
           <h3 className="text-3xl font-black">{title}</h3>
