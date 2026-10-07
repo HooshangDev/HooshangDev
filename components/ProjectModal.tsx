@@ -2,16 +2,11 @@
 
 import { useEffect, useRef, useState } from 'react'
 import CoverflowCarousel from './CoverflowCarousel'
+import ProjectVisual from './ProjectVisual'
+import type { Project } from '@/data/projects'
 
 interface ProjectModalProps {
-  project: {
-    title: string
-    engine: string
-    description: string
-    image: string
-    screenshots: string[]
-    video: string
-  }
+  project: Project
   onClose: () => void
 }
 
@@ -103,12 +98,8 @@ export default function ProjectModal({
         </button>
 
         {/* HERO IMAGE */}
-        <section className={`relative ${project.image ? 'h-[350px] sm:h-[500px]' : 'min-h-60'}`}>
-          {project.image && <img
-            src={imageSrc}
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />}
+        <section className={`relative ${(project.image || project.cover) ? 'h-[350px] sm:h-[500px]' : 'min-h-60'}`}>
+          {(project.image || project.cover) && <ProjectVisual project={project} imageSrc={imageSrc} />}
 
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-black/40 to-transparent" />
 
@@ -123,37 +114,58 @@ export default function ProjectModal({
           </div>
         </section>
 
-        {/* SCREENSHOTS */}
-        {project.screenshots.length > 0 && <section className="px-6 sm:px-10 py-10">
-          <h2 className="text-3xl font-bold text-white mb-8">
-            Screenshots
-          </h2>
+        {project.screenshots.length > 0 && (
+          <section className="px-6 sm:px-10 py-10">
+            <h2 className="text-3xl font-bold text-white mb-8">
+              Screenshots
+            </h2>
 
-          <CoverflowCarousel key={project.title} images={project.screenshots} />
-        </section>}
+            <CoverflowCarousel key={project.title} images={project.screenshots} />
+          </section>
+        )}
 
-        {/* VIDEO */}
-        {project.video && <section className="px-6 sm:px-10 py-10">
-          <h2 className="text-3xl font-bold text-white mb-8">
-            Gameplay
-          </h2>
+        {project.video && (
+          <section className="px-6 sm:px-10 py-10">
+            <h2 className="text-3xl font-bold text-white mb-8">
+              Gameplay
+            </h2>
 
-          <video
-            ref={videoRef}
-            src={project.video}
-            controls
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="
-              w-full
-              rounded-3xl
-              border
-              border-white/10
-            "
-          />
-        </section>}
+            <video
+              ref={videoRef}
+              src={project.video}
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="
+                w-full
+                rounded-3xl
+                border
+                border-white/10
+              "
+            />
+          </section>
+        )}
+
+        {project.highlights && (
+          <section className="px-6 sm:px-10 py-10">
+            <h2 className="text-3xl font-bold text-white mb-8">
+              What I built
+            </h2>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              {project.highlights.map((highlight) => (
+                <div
+                  key={highlight}
+                  className="glass rounded-2xl p-5 text-white/75"
+                >
+                  {highlight}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* DESCRIPTION */}
         <section className="px-10 pb-20">

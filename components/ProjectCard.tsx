@@ -1,17 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
-
-interface Project {
-  title: string
-  engine: string
-  description: string
-  image: string
-  screenshots: string[]
-  video: string
-}
+import type { Project } from '@/data/projects'
+import ProjectVisual from './ProjectVisual'
 
 interface ProjectCardProps {
   project: Project
@@ -51,15 +43,8 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
           overflow-hidden
         "
       >
-        {project.image && <div className="h-60 bg-white/5 relative overflow-hidden">
-          <Image
-            src={imageSrc}
-            alt={project.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            unoptimized
-            className="object-cover"
-          />
+        {(project.image || project.cover) && <div className="h-60 bg-white/5 relative overflow-hidden">
+          <ProjectVisual project={project} imageSrc={imageSrc} />
         </div>}
 
         <div className="p-8">
@@ -72,6 +57,19 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
           <p className="text-white/70">
             {project.description}
           </p>
+
+          {project.highlights && (
+            <div className="mt-6 flex flex-wrap gap-2">
+              {project.highlights.slice(0, 3).map((highlight) => (
+                <span
+                  key={highlight}
+                  className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/60"
+                >
+                  {highlight.split(' ').slice(0, 4).join(' ')}…
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </motion.div>
     </button>

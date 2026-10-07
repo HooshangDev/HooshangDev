@@ -18,6 +18,11 @@ export default function ExperiencePage() {
     "Dedicated Servers",
     "Multiplayer",
     "VR",
+    "XR Interaction Toolkit",
+    "DOTween",
+    "Shader Graph",
+    "ScriptableObjects",
+    "UnityEvents",
     "Android",
     "Live Ops",
     "Game Analytics",
@@ -111,12 +116,8 @@ export default function ExperiencePage() {
           title={labProject.title}
           subtitle="Latest work experience · Lab development"
           engine={labProject.engine}
-          bullets={[
-            "Worked on framework setup and day-to-day lab development.",
-            "Reorganized existing components and integrated changes across the project.",
-            "Maintained and adapted the existing project structure as requirements changed.",
-          ]}
-          skills={["Framework Development", "Integration", "Maintenance"]}
+          bullets={labProject.highlights}
+          skills={["Unity", "C#", "XR Interaction Toolkit", "Physics", "Task Systems"]}
         />
 
         <Project

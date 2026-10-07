@@ -1,7 +1,23 @@
 import { featuredGame } from './featuredGame'
 import { labProject } from './labProject'
 
-export const projects = [
+export interface Project {
+  title: string
+  engine: string
+  description: string
+  image?: string
+  screenshots: string[]
+  video?: string
+  highlights?: string[]
+  cover?: {
+    eyebrow: string
+    title: string
+    detail: string
+    accent: string
+  }
+}
+
+export const projects: Project[] = [
   labProject,
   {
     title: 'RogueRider(Developed Solo)',
