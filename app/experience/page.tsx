@@ -116,6 +116,7 @@ export default function ExperiencePage() {
           title={labProject.title}
           subtitle="Latest work experience · Lab development"
           engine={labProject.engine}
+          image={labProject.image}
           bullets={labProject.highlights}
           skills={["Unity", "C#", "XR Interaction Toolkit", "Physics", "Task Systems"]}
         />

@@ -332,7 +332,8 @@ useEffect(() => {
                 sizes="(max-width: 768px) 78vw, 600px"
                 unoptimized
                 className="
-                  object-cover
+                  object-contain
+                  bg-black/30
                   rounded-3xl
                   border
                   border-white/10

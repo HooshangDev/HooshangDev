@@ -8,7 +8,7 @@ export const labProject = {
     'Expanded the task framework with timers, value measurements and automatic task wiring.',
     'Integrated sockets, placement hints, feedback, failure handling and Inspector-configurable callbacks.',
   ],
-  image: '',
-  screenshots: [] as string[],
+  image: '/images/projects/manshour_0.png',
+  screenshots: ['/images/projects/manshour_0.png'],
   video: '',
 }
