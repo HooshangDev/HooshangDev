@@ -1,262 +1,140 @@
-# Hi 👋 I'm Manouchehr Soltani
+# Hi, I'm Manouchehr Soltani 👋
 
-<div align="center">
+### Gameplay & Systems Engineer · Unreal Engine · Unity
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&center=true&vCenter=true&width=1000&lines=Gameplay+%26+Systems+Engineer;Unreal+Engine+%7C+Unity+Developer;Multiplayer+%26+Backend+Specialist;Building+Games+Since+2023" />
+I build multiplayer games, physics-driven gameplay, VR experiences and the backend systems that support them. With **4+ years of hands-on experience**, my work spans solo game development, commercial releases, live-service systems and reusable gameplay frameworks.
 
-</div>
+[Portfolio](https://hooshang-dev.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/manouchehr-soltani-the-creator) · [Telegram](https://t.me/manouchehr_st)
 
----
+## 🎲 What I'm working on
 
-## 🎮 About Me
+### Snake Quizz Ladder — my current indie game
 
-```cpp
-class Manouchehr
-{
-public:
+An independently developed multiplayer take on snakes and ladders, combining board gameplay with quiz challenges and category-based trophy progression.
 
-    Engine[] Engines =
-    {
-        UnrealEngine,
-        Unity
-    };
+- **Multiplayer gameplay:** server-authoritative dice outcomes, physics-driven dice animation and networked pawn movement.
+- **Quiz progression:** category challenges, difficulty choices and trophy records.
+- **Social systems:** friends, friend requests, real-time chat and clubs with member profiles and shared trophy totals.
+- **Player customization:** a remotely configured cosmetics shop, inventory and equipped loadouts.
+- **Current milestone:** bringing these systems together for a playable demo.
 
-    Skill[] Skills =
-    {
-        Multiplayer,
-        Replication,
-        GameplaySystems,
-        BackendServices,
-        LiveOps,
-        ProceduralGeneration,
-        VRDevelopment
-    };
+**Built with:** Unity · C# · Node.js
 
-    CurrentFocus =
-    {
-        MultiplayerArchitecture,
-        AnalyticsSystems,
-        UnrealEngineTooling,
-        VRDevelopement,
-        IndieGame
-    };
-};
-```
+[Explore the game and gameplay footage](https://hooshang-dev.vercel.app/projects#snake-quizz-ladder)
 
----
+## 🧪 Latest work experience
 
-## 🚀 Featured Projects
+### Farhangian VR Science Lab
+**Unity · C# · XR Interaction Toolkit**
 
-### 🏎️ EverRide
+Development and integration for an educational VR lab, connecting interactive chemistry and physics experiments to reusable task infrastructure.
 
-Multiplayer online racing game developed in Unreal Engine.
+- Connected TLC, caffeine and permanganate chemistry workflows to task data and completion logic.
+- Developed F=ma, spring-impact and pendulum modules with measurement checkpoints and VR controls.
+- Expanded the task framework with timers, value measurements and automatic task wiring.
+- Integrated sockets, placement hints, feedback, failure handling and Inspector-configurable callbacks.
 
-✔ Custom replication system
+## 🎮 Commercial game experience
 
-✔ Physics-based racing mechanics
+### EverRide — Solo Developer
+**Unreal Engine · C++ · Blueprints · Android · Dedicated Servers**
 
-✔ Spline movement architecture
+Developed and published a multiplayer racing game, taking its gameplay architecture from prototype to release.
 
-✔ JNI Android integrations
+- Built custom replication and transform-buffer synchronization for physics-based vehicles, drifting and spline movement.
+- Implemented racing abilities, player customization, cosmetics, a shop and leaderboards.
+- Integrated gameplay, UI, backend services and dedicated server logic.
+- Bridged Java → JNI → C++ for Cafe Bazaar Android integration through custom Unreal plugins.
+- Implemented on-demand asset delivery and optimized mobile performance.
 
-✔ Dedicated server architecture
+[View on Cafe Bazaar](https://cafebazaar.ir/app/com.Manataz.EverRide)
 
-✔ Mobile optimization
+### Rogue Rider — Solo Developer
+**Unreal Engine · Multiplayer · Procedural Generation · SQLite**
 
----
+An online racing game with randomly generated roads, player abilities, cosmetics, race-pass progression and leaderboards. Built custom physics replication and dedicated-server persistence. Its technical foundation later evolved into EverRide.
 
-### 🔫 Kinetic (Urban Ranger)
+### Kinetic (Urban Ranger)
+**Unreal Engine · Multiplayer FPS**
 
-Competitive multiplayer FPS.
+Implemented weapons, grenades, usable items and character inventory systems, alongside capture-point objectives, team scoring and match flow.
 
-✔ Weapon systems
+### Detective Mehrdad
+**Unity · C# · Node.js · Live Ops**
 
-✔ Grenades & usable items
+Worked on a released hidden-object adventure game, taking ownership of an undocumented production codebase.
 
-✔ Capture point gameplay
+- Developed a modular hidden-object framework for events and future reuse.
+- Built events, missions, economy and progression systems.
+- Implemented remotely configured daily rewards, cosmetics, inventory and avatar customization.
+- Integrated backend services, server-authoritative progression and Bazaar IAP, including server-logic and database migrations.
+- Created a modular sound manager using Addressables for on-demand audio loading and loop handling.
 
-✔ Team scoring systems
+## 🥽 VR & client projects
 
-✔ Character inventory systems
+### Kalleh Halloumi VR Cooking
+**Unity · VR Interaction · Object Physics**
 
----
+Developed an interactive VR cooking experience for Kalleh Foods, with grabbing, cutting, grilling and serving interactions. Implemented gameplay systems, object physics, guided tasks and UI integration; led development completion and mentored a junior developer.
 
-### 🕵️ Detective Mehrdad
+### Kalleh Verification Platform
+**Node.js · Client & Server**
 
-Live-service Unity game.
+Built an OTP verification and registration platform and managed customer event data.
 
-✔ Event system
+### Merge Campaign Backend
+**Node.js · Data Export**
 
-✔ Economy & progression
+Built backend services for a merge advertisement game, including player registration, lottery workflows and Excel exports.
 
-✔ Remote Config
+## 🛠️ More personal projects
 
-✔ Node.js backend
+### Wheelchair Recoil Survival
+**Unreal Engine · In development**
 
-✔ Data migration systems
+A co-op survival project exploring physics-driven wheelchair movement, recoil-based gameplay, weapons, inventory and replication-ready multiplayer architecture.
 
-✔ Inventory & cosmetics
+### Space Garage VR Prototype
+**Unity · VR · Built in one week**
 
----
+A spaceship-repair prototype with a modular onboarding framework, reusable objectives, completion/failure conditions and physics-based interactions. Players install a battery, tighten components with an air wrench and activate the spaceship.
 
-### ♿ Wheelchair Recoil Survival Game
+Built floating instruction panels, draggable tutorial widgets, dynamic target tracking, Bézier guidance lines and an audio manager.
 
-Personal Unreal Engine project.
+[Browse the repository](https://github.com/HooshangDev/Rick-sGarageVR)
 
-✔ Physics-driven movement
+### Procedural Maze Generator
+**Unreal Engine · Procedural Generation**
 
-✔ Weapon & inventory systems
+An optimized maze-generation system packaged as a reusable foundation for future games.
 
-✔ Multiplayer-ready architecture
+[Browse the repository](https://github.com/HooshangDev/DFS_Unreal_Maze_Generator)
 
-✔ Co-op survival gameplay
+## ⚙️ Technical toolkit
 
-✔ Weapon upgrade systems
+| Area | Technologies & experience |
+| --- | --- |
+| Engines & languages | Unreal Engine, Unity, C++, C#, Blueprints, Node.js, Java / JNI |
+| Multiplayer | Replication, dedicated servers, custom physics synchronization, server-authoritative gameplay |
+| Gameplay | Physics-based systems, vehicles, weapons, inventory, procedural generation, reusable task frameworks |
+| VR | XR Interaction Toolkit, object manipulation, sockets, world-space UI, guided onboarding |
+| Backend & data | Node.js, SQLite, MySQL, remote configuration, progression, social systems |
+| Production & integrations | Android, Cafe Bazaar IAP, Addressables, mobile optimization, Git |
+| Unity tools | ScriptableObjects, UnityEvents, DOTween, Shader Graph |
 
-✔ Exploration & progression systems
+## 🎯 Current focus
 
-✔ Physics-based character controller
+- Preparing the **Snake Quizz Ladder playable demo**.
+- Building reusable multiplayer, social and progression systems.
+- Developing VR gameplay and task infrastructure.
+- Working with live-service infrastructure, Firebase push notifications, Metrix and GameAnalytics integrations.
+- Exploring Unreal Engine gameplay frameworks and procedural generation.
 
----
+## 📊 GitHub activity
 
-### 🧀 Kalleh VR Cooking Experience
-
-VR training and product showcase experience developed for Kalleh, focused on Halloumi cheese preparation.
-
-✔ VR interaction framework
-
-✔ Interactive cooking workflow
-
-✔ Guided tutorial system
-
-✔ Teleportation & smooth locomotion
-
-✔ Audio feedback system
-
-✔ Cooking timers & task progression
-
-✔ Pick-up & grab interactions
-
-✔ Ingredient mixing mechanics
-
-✔ VR UI implementation
-
-✔ Interactive cooking tools
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=HooshangDev&show_icons=true&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=HooshangDev&layout=compact&hide_border=true)
 
 ---
 
-### 🚀 Space Garage VR Prototype
-
-Experimental VR project set inside a floating garage in outer space.
-
-Implemented a complete guided onboarding experience where players learn to repair and activate a spaceship through interactive objectives.
-
-✔ Custom tutorial framework architecture
-
-✔ Dynamic world-space popups
-
-✔ Object tracking tutorial widgets
-
-✔ Bezier-curve guidance system
-
-✔ Runtime popup positioning system
-
-✔ Flexible single-instance tutorial manager
-
-✔ Success & failure condition handling
-
-✔ Event-driven progression system
-
-✔ VR interaction systems
-
-#### Gameplay Flow
-
-✔ Pick up spaceship battery
-
-✔ Insert battery into spaceship power socket
-
-✔ Collect screws individually
-
-✔ Tighten screws using an air wrench
-
-✔ Complete guided repair sequence
-
-✔ Launch and activate the spaceship
-
-#### Technical Highlights
-
-✔ Tutorial steps callable from any gameplay system
-
-✔ Generic fail-state architecture
-
-✔ Reusable objective framework
-
-✔ Dynamic target tracking
-
-✔ World-space instructional UI
-
-✔ Modular VR gameplay architecture
-
-✔ Physics-driven interactions
-
-✔ Scalable onboarding system for future VR experiences
-
----
-
-## 🛠️ Tech Stack
-
-### Game Development
-
-![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-313131?style=for-the-badge\&logo=unrealengine)
-![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge\&logo=unity)
-
-### Programming
-
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge\&logo=cplusplus)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge\&logo=csharp)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js)
-
-### Backend & Analytics
-
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge\&logo=sqlite)
-
----
-
-## 📊 GitHub Analytics
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=HooshangDev\&show_icons=true\&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=HooshangDev\&layout=compact\&hide_border=true)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=HooshangDev\&hide_border=true)
-
----
-
-## 📈 Contribution Graph
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=HooshangDev)
-
----
-
-## 🎯 Current Focus
-
-* Firebase Push Notifications
-* Metrix Analytics Integration
-* Multiplayer Networking
-* Unreal Engine Gameplay Frameworks
-* Procedural Generation Systems
-
----
-
-## ⚡ Fun Fact
-
-I once had to implement missing Android marketplace functionality for Unreal Engine by bridging Java → JNI → C++ because the official plugin didn't exist.
-
----
-
-<div align="center">
-
-### 🎮 Building Games, Systems & Multiplayer Experiences
-
-</div>
+Interested in gameplay, multiplayer, backend or VR development? [See my portfolio](https://hooshang-dev.vercel.app/) or [connect on LinkedIn](https://www.linkedin.com/in/manouchehr-soltani-the-creator).
