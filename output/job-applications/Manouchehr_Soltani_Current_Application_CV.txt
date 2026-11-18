@@ -1,0 +1,37 @@
+MANOUCHEHR SOLTANI
+Game Developer | Unreal Engine, Unity & Multiplayer Systems
+Mashhad, Iran | s.manouchehr60@gmail.com
+Portfolio: https://hooshang-dev.vercel.app/
+LinkedIn: https://www.linkedin.com/in/manouchehr-soltani-the-creator/
+
+SUMMARY
+Game developer with 4+ years of hands-on Unreal Engine experience and 2+ years of Unity/C# experience. Experience shipping games, implementing gameplay and multiplayer systems, integrating platform services, and maintaining live releases. Available immediately for paid remote work from Iran. Expected rate: USD $25/hour equivalent, negotiable.
+
+SKILLS
+Unreal Engine, C++, Blueprints, Unity, C#, multiplayer architecture and replication, gameplay systems, debugging, engine source customization, Git, mobile publication, advertising SDKs and in-app purchases.
+
+SELECTED PROJECT EXPERIENCE
+Detective Mehrdad | Unity | Shipped project
+- Took over an undocumented Unity codebase and recovered systems under deadline.
+- Implemented event systems, economy, progression, remote configuration, Node.js backend integration, in-app purchases, and player data migration.
+- Built reward systems and notification-based rewards.
+
+Ever Ride | Solo Developer | Unreal Engine | Published Android multiplayer racing game
+- Independently developed the game from gameplay implementation through publication and live maintenance.
+- Implemented online multiplayer racing and replication systems.
+- Modified Unreal Engine source code to integrate Cafe Bazaar in-app purchases and Adivery advertising.
+- Published on Cafe Bazaar: https://cafebazaar.ir/app/com.Manataz.EverRide
+
+Multiplayer FPS | Lead Developer | Unreleased/on hold
+- Developed core gameplay and multiplayer replication systems, including weapons, objectives, scoring, inventory, and character selection.
+
+Kaleh VR Experience | Advergaming VR Project
+- Led development and junior developer coordination for a VR marketing experience.
+- Built onboarding with OTP phone verification, data collection, and event tracking for CRM use.
+- Delivered for live corporate event deployment.
+
+EDUCATION
+Associate Degree in Software Engineering, Islamic Azad University, Mashhad.
+
+LANGUAGES
+Persian; fluent English speaking and writing.

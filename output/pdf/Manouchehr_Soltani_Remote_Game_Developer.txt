@@ -1,0 +1,60 @@
+MANOUCHEHR SOLTANI
+
+Game Developer | Unreal Engine & Multiplayer Systems
+
+Mashhad, Iran | manouchehr.st@gmail.com
+
+Portfolio: hooshang-dev.vercel.app
+
+LinkedIn: linkedin.com/in/manouchehr-soltani-the-creator
+
+PROFESSIONAL SUMMARY
+
+Unreal Engine developer with 4+ years of hands-on experience building online and offline games for PC and mobile. Specializes in C++, Blueprints, multiplayer networking, and engine source customization. Independently developed and published an Android multiplayer racing game, with experience spanning gameplay implementation, monetization integration, and live maintenance.
+
+TECHNICAL SKILLS
+
+Engines & programming: Unreal Engine, C++, Blueprints; Unity fundamentals
+
+Gameplay & networking: Multiplayer architecture, replication, custom matchmaking, network optimization, animation systems, AI, behavior trees
+
+Effects & interface: Niagara VFX, MetaSounds, UMG, Figma design and handoff
+
+Tools & integrations: Git, GitHub, engine source modification, advertising SDKs, Cafe Bazaar in-app purchases; Blender and Substance Painter/Designer (intermediate)
+
+PROJECT EXPERIENCE
+
+Ever Ride | Solo Developer
+
+Manataz Studio | 2023 | Android multiplayer racing
+
+- Independently developed the complete game in Unreal Engine, from gameplay implementation to publication.
+
+- Implemented the multiplayer racing system to support online play.
+
+- Modified Unreal Engine source code to integrate Cafe Bazaar in-app purchases and Adivery advertising.
+
+- Published the game on Cafe Bazaar and maintained the live release.
+
+View game on Cafe Bazaar
+
+Multiplayer FPS | Lead Developer
+
+Company project | 2022 | Unreleased; on hold
+
+- Designed and implemented core gameplay mechanics for a multiplayer first-person shooter.
+
+- Developed multiplayer architecture and replication systems.
+
+EDUCATION
+
+Associate Degree in Software Engineering
+Islamic Azad University, Mashhad | 2020
+
+LANGUAGES
+
+Persian | English: fluent in speaking and writing
+
+CAREER INTEREST
+
+Seeking paid remote game development opportunities, including contract work, focused on Unreal Engine, gameplay, and multiplayer systems. Based in Iran.

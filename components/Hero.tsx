@@ -2,8 +2,9 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import type { Content } from '@/lib/content'
 
-export default function Hero() {
+export default function Hero({ home }: { home: Content['home'] }) {
   return (
     <section className="min-h-[90vh] flex items-center px-6">
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
@@ -15,37 +16,21 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <p className="text-blue-400 mb-4 uppercase tracking-[0.3em]">
-            Unreal / Unity Developer
+            {home.eyebrow}
           </p>
 
           <h1 className="text-5xl sm:text-6xl xl:text-8xl font-black leading-none mb-6">
-            Manouchehr
+            {home.firstName}
             <br />
-            Soltani
+            {home.lastName}
           </h1>
 
           <p className="text-white/70 text-xl leading-relaxed max-w-xl mb-10">
-            Gameplay & Systems Engineer specializing in multiplayer,
-            physics-driven gameplay, VR interaction systems, backend
-            architecture, and creating polished gameplay experiences with
-            Unreal Engine and Unity.
+            {home.description}
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="#snake-quizz-ladder" className="px-8 py-4 bg-lime-300 text-zinc-950 rounded-full font-semibold hover:bg-lime-200 transition">Discover Snake Quizz Ladder</a>
-            <a
-              href="/projects"
-              className="px-8 py-4 bg-white text-black rounded-full font-semibold hover:scale-105 transition"
-            >
-              View Projects
-            </a>
-
-            <a
-              href="/contact"
-              className="px-8 py-4 border border-white/20 rounded-full hover:bg-white/10 transition"
-            >
-              Contact
-            </a>
+            {home.actions.map((action, index) => <a key={index} href={action.href} className={`px-8 py-4 rounded-full font-semibold transition ${index === 0 ? 'bg-lime-300 text-zinc-950 hover:bg-lime-200' : 'border border-white/20 hover:bg-white/10'}`}>{action.label}</a>)}
           </div>
         </motion.div>
 
@@ -63,8 +48,8 @@ export default function Hero() {
             {/* Image Frame */}
             <div className="relative w-full h-full rounded-full overflow-hidden border border-white/10 bg-white/5 backdrop-blur-lg shadow-2xl">
               <Image
-                src="/me.jpg"
-                alt="Manouchehr Soltani"
+                src={home.portrait || '/me.jpg'}
+                alt={`${home.firstName} ${home.lastName}`}
                 fill
                 priority
                 className="object-cover"

@@ -1,0 +1,584 @@
+{
+  "site": {
+    "title": "Manouchehr Soltani | Gameplay & Systems Engineer",
+    "description": "Unreal Engine and Unity Gameplay Systems Engineer specializing in multiplayer, backend systems, and physics-driven gameplay.",
+    "brand": "MS",
+    "footer": "© 2026 Manouchehr Soltani — Gameplay & Systems Engineer",
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "Snake Quizz Ladder",
+        "href": "/projects#snake-quizz-ladder"
+      },
+      {
+        "label": "Experience",
+        "href": "/experience"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "home": {
+    "eyebrow": "Unreal / Unity Developer",
+    "firstName": "Manouchehr",
+    "lastName": "Soltani",
+    "description": "Gameplay & Systems Engineer specializing in multiplayer, physics-driven gameplay, VR interaction systems, backend architecture, and creating polished gameplay experiences with Unreal Engine and Unity.",
+    "portrait": "/me.jpg",
+    "actions": [
+      {
+        "label": "Discover Snake Quizz Ladder",
+        "href": "#snake-quizz-ladder"
+      },
+      {
+        "label": "View Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "skills": [
+      "Multiplayer Systems",
+      "Physics Gameplay",
+      "Backend Engineering",
+      "Procedural Generation",
+      "VR Interaction Systems",
+      "Assessment Tooling"
+    ]
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "moreTitle": "More projects"
+  },
+  "projects": [
+    {
+      "title": "Farhangian VR Science Lab",
+      "engine": "Unity / XR Interaction Toolkit",
+      "description": "Development and integration for a VR science lab, bringing chemistry workflows, interactive physics experiments and reusable task infrastructure together in one project. My work focused on framework development, connecting scene interactions to task data, and maintaining the lab systems as requirements evolved.",
+      "image": "/images/projects/manshour_0.png",
+      "screenshots": [
+        "/images/projects/manshour_0.png"
+      ],
+      "video": "",
+      "highlights": [
+        "Connected TLC, caffeine and permanganate chemistry workflows to reusable task data and completion logic.",
+        "Developed F=ma, spring-impact and pendulum modules with measurement checkpoints and VR controls.",
+        "Expanded the task framework with timers, value measurements and automatic task wiring.",
+        "Integrated sockets, placement hints, feedback, failure handling and Inspector-configurable callbacks."
+      ],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      }
+    },
+    {
+      "title": "RogueRider(Developed Solo)",
+      "engine": "Unreal Engine",
+      "description": "RogueLike Multiplayer racing game with random Road generation system,players have abilities like teleport,speed,rotation and the main goal is to reach the finish point before other players. shop system and cosmetic items are also available. race-pass system and leader board is also implemented. the database used is SQLite Locally on the dedicated server machine. custom physics replication was developed to keep all players updated.",
+      "image": "/images/projects/rr_garage.jpg",
+      "screenshots": [
+        "/images/projects/rr_screenshot1.jpg",
+        "/images/projects/rr_screenshot2.jpg",
+        "/images/projects/rr_screenshot3.jpg",
+        "/images/projects/main-menu-rr-s.jpg",
+        "/images/projects/map۲-rr-s.jpg"
+      ],
+      "video": "/videos/projects/rr_video.mp4",
+      "highlights": [],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      }
+    },
+    {
+      "title": "EverRide(Developed Solo)",
+      "engine": "Unreal Engine",
+      "description": "Multiplayer racing game with spline movement and custom perfect replication systems.    Custom physics for cars movement and drifting along the road,    3 different abilities to challenge other players, one that switch places, one that slows players on hit, one that boosts the player under some conditions,and we had a shield ability    Database used for this game was also Mysql on the dedicated server machine,and the server itself was Unreal engines dedicated server    shop,leaderboard,cosmetics,customization,custom IAP plugin for a localized market(Bazaar),On-Demand Asset Download & Data Management : unreal engine .pac files    ",
+      "image": "/images/projects/everride2.jpg",
+      "screenshots": [
+        "/images/projects/everride.jpg",
+        "/images/projects/everride2.jpg",
+        "/images/projects/everride3.jpg"
+      ],
+      "video": "/videos/projects/everride_vid.mp4",
+      "highlights": [],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      }
+    },
+    {
+      "title": "Kinetic FPS",
+      "engine": "Unreal Engine",
+      "description": "Competitive multiplayer FPS with objective gameplay systems.",
+      "image": "/images/projects/kinetic.jpg",
+      "screenshots": [
+        "/images/projects/kinetic.jpg",
+        "/images/projects/kinetic.jpg",
+        "/images/projects/kinetic.jpg"
+      ],
+      "video": "/videos/projects/kinetic.mp4",
+      "highlights": [],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      }
+    },
+    {
+      "title": "Detective Mehrdad",
+      "engine": "Unity",
+      "description": "Live ops hidden-object adventure game with backend architecture.    developed a custom modular Hidden Object game that is used for future events that i developed ,and later will replace the main Hidden Object system(that was not well written and needs replacement)    developed a remote configable daily reward system with a slot machine for rewards    avatar and character customization system were fully developed and migrated server logics and database with the new systems    created a modular sound manager system that used Addressable On-Demand Assed Download and handling sound loops anywhere in the game",
+      "image": "/images/projects/detective-mehrdad.jpg",
+      "screenshots": [
+        "/images/projects/detective-mehrdad.jpg",
+        "/images/projects/detective0.png",
+        "/images/projects/detective1.png",
+        "/images/projects/detective2.png",
+        "/images/projects/detective3.png",
+        "/images/projects/detective4.png",
+        "/images/projects/detective5.png"
+      ],
+      "video": "/videos/projects/detective.mp4",
+      "highlights": [],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      }
+    },
+    {
+      "title": "Kalleh Halloumi Cheese ,AdverGame",
+      "engine": "Unity",
+      "description": "A virtual reality marketing game developed for Kalleh Foods to promote their Halloumi Cheese product through an interactive cooking experience. Players enter a fully immersive VR kitchen where they prepare and cook Halloumi Cheese using realistic interactions, including grabbing, cutting, grilling, and serving ingredients.The project focused on delivering intuitive VR gameplay, realistic object interactions, and an engaging user experience that highlights the products features in a memorable way. I was responsible for implementing the gameplay systems, VR interactions, object physics, user interface integration, and overall technical development of the experience.",
+      "image": "/images/projects/kalleh0.png",
+      "screenshots": [
+        "/images/projects/kalleh0.png",
+        "/images/projects/kalleh1.png",
+        "/images/projects/kalleh2.png"
+      ],
+      "video": "/videos/projects/vr_kalleh.mp4",
+      "highlights": [],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      }
+    },
+    {
+      "title": "VR Demo Game(one week project)",
+      "engine": "Unity",
+      "description": "VR Spaceship Prototype (2026)Built within one week.• Modular tutorial framework• Tutorial step completion/failure system• Interactive VR object manipulation• Floating instruction panels• Head-tracked UI system• Draggable tutorial widgets• Bezier-guided object indicators• Sound manager singleton architecture• Physics-based interaction systems• Gameplay: Install spaceship battery• Gameplay: Tighten mechanical components using air wrench• Gameplay: Launch spaceship sequence• Planned Features: Spaceship piloting• Planned Features: Battery management systems• Planned Features: Recharge mechanics",
+      "image": "/images/projects/rick0.png",
+      "screenshots": [
+        "/images/projects/rick0.png",
+        "/images/projects/rick1.png",
+        "/images/projects/rick3.png",
+        "/images/projects/rick4.png",
+        "/images/projects/rick5.png"
+      ],
+      "video": "/videos/projects/VR_test.mp4",
+      "highlights": [],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      }
+    },
+    {
+      "title": "Snake Quizz Ladder",
+      "engine": "Unity · C# · Node.js",
+      "description": "My independently developed multiplayer board game brings quiz challenges to snakes and ladders. Roll the dice, climb the board and test your knowledge, with category-based trophies that give every answer a sense of progression. Recent development adds clubs, friend requests and real-time chat, alongside a remotely configured cosmetics shop and player customization. Built with Unity and a Node.js backend, the game combines server-authoritative dice outcomes with physics-driven dice animation. Now approaching a playable demo.",
+      "image": "/images/projects/snakeLadder.png",
+      "screenshots": [
+        "/images/projects/snake-quizz-ladder/lobby.png",
+        "/images/projects/snake-quizz-ladder/board.png",
+        "/images/projects/snake-quizz-ladder/customization.png",
+        "/images/projects/dice_cool.jpg",
+        "/images/projects/sql/sql0.png",
+        "/images/projects/sql/sql1.png",
+        "/images/projects/sql/sql2.png",
+        "/images/projects/sql/sql3.png",
+        "/images/projects/sql/sql4.png",
+        "/images/projects/sql/sql5.png",
+        "/images/projects/sql/sql6.png",
+        "/images/projects/sql/sql7.png"
+      ],
+      "video": "/videos/projects/snakeladder.mp4",
+      "highlights": [],
+      "cover": {
+        "eyebrow": "",
+        "title": "",
+        "detail": "",
+        "accent": "#2563eb"
+      },
+      "status": "Playable demo in preparation",
+      "updates": [
+        {
+          "title": "A quiz twist",
+          "description": "Board-based quiz challenges, difficulty choices and category trophy progression."
+        },
+        {
+          "title": "Play socially",
+          "description": "Find friends, chat in real time and join clubs with shared trophy totals."
+        },
+        {
+          "title": "Make it yours",
+          "description": "Player cosmetics, equipped loadouts and a remotely configured shop."
+        }
+      ]
+    }
+  ],
+  "featured": {
+    "projectTitle": "Snake Quizz Ladder",
+    "eyebrow": "Featured indie game · My current project",
+    "tagline": "Roll. Climb. Put your knowledge to the test.",
+    "summary": "A multiplayer twist on snakes and ladders, where quiz challenges meet friendly competition. Build your trophy record, find your club and make the board your own.",
+    "status": "Playable demo in preparation",
+    "detailsLabel": "Watch gameplay & explore",
+    "contactLabel": "Ask about the demo",
+    "updates": [
+      {
+        "title": "A quiz twist",
+        "description": "Board-based quiz challenges, difficulty choices and category trophy progression."
+      },
+      {
+        "title": "Play socially",
+        "description": "Find friends, chat in real time and join clubs with shared trophy totals."
+      },
+      {
+        "title": "Make it yours",
+        "description": "Player cosmetics, equipped loadouts and a remotely configured shop."
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "description": "Gameplay and Systems Engineer with 4+ years of experience across Unreal Engine and Unity Engine development, specializing in multiplayer architecture, backend integration, and physics-driven gameplay systems.",
+    "skills": [
+      "Unreal Engine",
+      "Unity Engine",
+      "C++",
+      "C#",
+      "Node.js",
+      "Procedural Generation"
+    ]
+  },
+  "experience": {
+    "eyebrow": "Gameplay & Systems Engineer",
+    "title": "Commercial\nGame Development",
+    "description": "4+ years developing commercial multiplayer games, VR experiences, backend infrastructure and live-service systems using Unreal Engine and Unity.",
+    "techTitle": "Tech Stack",
+    "techStack": [
+      "Unreal Engine 5",
+      "Unity",
+      "C++",
+      "C#",
+      "Blueprints",
+      "Node.js",
+      "Firebase",
+      "SQLite",
+      "MySQL",
+      "Java",
+      "JNI",
+      "Dedicated Servers",
+      "Multiplayer",
+      "VR",
+      "XR Interaction Toolkit",
+      "DOTween",
+      "Shader Graph",
+      "ScriptableObjects",
+      "UnityEvents",
+      "Android",
+      "Live Ops",
+      "Game Analytics",
+      "Git"
+    ],
+    "stats": [
+      {
+        "value": "7+",
+        "label": "Commercial Projects"
+      },
+      {
+        "value": "4+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "3",
+        "label": "Published Games"
+      },
+      {
+        "value": "2",
+        "label": "Game Engines"
+      }
+    ],
+    "commercial": [
+      {
+        "title": "Farhangian VR Science Lab",
+        "subtitle": "Latest work experience · Lab development",
+        "engine": "Unity / XR Interaction Toolkit",
+        "image": "/images/projects/manshour_0.png",
+        "bullets": [
+          "Connected TLC, caffeine and permanganate chemistry workflows to reusable task data and completion logic.",
+          "Developed F=ma, spring-impact and pendulum modules with measurement checkpoints and VR controls.",
+          "Expanded the task framework with timers, value measurements and automatic task wiring.",
+          "Integrated sockets, placement hints, feedback, failure handling and Inspector-configurable callbacks."
+        ],
+        "skills": [
+          "Unity",
+          "C#",
+          "XR Interaction Toolkit",
+          "Physics",
+          "Task Systems"
+        ],
+        "featured": false
+      },
+      {
+        "title": "EverRide",
+        "subtitle": "Released • March 18, 2025",
+        "engine": "Unreal Engine",
+        "image": "",
+        "bullets": [
+          "Solo developed the complete gameplay architecture from prototype to release.",
+          "Designed multiplayer replication and transform-buffer synchronization.",
+          "Implemented physics-based vehicles, drifting and spline movement.",
+          "Integrated Bazaar Android SDK using custom Java, JNI and Unreal plugins.",
+          "Developed gameplay systems, UI, backend integration, dedicated server logic and SQLite database.",
+          "Optimized mobile performance and shipped commercial release."
+        ],
+        "skills": [
+          "Unreal",
+          "C++",
+          "Networking",
+          "JNI",
+          "SQLite",
+          "Optimization"
+        ],
+        "featured": true
+      },
+      {
+        "title": "Rogue Rider",
+        "subtitle": "Published • Later redesigned into EverRide",
+        "engine": "Unreal Engine",
+        "image": "",
+        "bullets": [
+          "Original online racing game.",
+          "Implemented multiplayer gameplay systems.",
+          "Created the technical foundation later evolved into EverRide."
+        ],
+        "skills": [
+          "Gameplay",
+          "Networking",
+          "Mobile"
+        ],
+        "featured": false
+      },
+      {
+        "title": "Kinetic (Urban Ranger)",
+        "subtitle": "Multiplayer FPS",
+        "engine": "Unreal Engine",
+        "image": "",
+        "bullets": [
+          "Implemented weapons, grenades and inventory systems.",
+          "Developed capture-point multiplayer gameplay.",
+          "Built scoring, objectives and match flow."
+        ],
+        "skills": [
+          "FPS",
+          "Gameplay",
+          "Replication"
+        ],
+        "featured": false
+      },
+      {
+        "title": "Detective Mehrdad",
+        "subtitle": "Released • November 2025",
+        "engine": "Unity",
+        "image": "",
+        "bullets": [
+          "Took ownership of an undocumented production codebase.",
+          "Built Live Ops systems including events, missions and progression.",
+          "Integrated Node.js backend and Bazaar IAP.",
+          "Developed remote configuration and server-authoritative progression.",
+          "Implemented cosmetics, inventory, avatar and daily rewards."
+        ],
+        "skills": [
+          "Unity",
+          "Node.js",
+          "Live Ops",
+          "Backend"
+        ],
+        "featured": true
+      },
+      {
+        "title": "Kalleh VR Cooking",
+        "subtitle": "VR Advertisement",
+        "engine": "Unity",
+        "image": "",
+        "bullets": [
+          "Led development completion.",
+          "Mentored junior developer.",
+          "Implemented VR gameplay interactions."
+        ],
+        "skills": [
+          "VR",
+          "Unity",
+          "XR"
+        ],
+        "featured": false
+      },
+      {
+        "title": "Kalleh Verification Platform",
+        "subtitle": "Client + Server",
+        "engine": "Node.js",
+        "image": "",
+        "bullets": [
+          "Built OTP verification platform.",
+          "Implemented registration workflow.",
+          "Managed customer event data."
+        ],
+        "skills": [
+          "Node.js",
+          "OTP",
+          "Backend"
+        ],
+        "featured": false
+      },
+      {
+        "title": "Merge Campaign Backend",
+        "subtitle": "Node.js",
+        "engine": "Backend",
+        "image": "",
+        "bullets": [
+          "Built backend for merge advertisement game.",
+          "Implemented Excel export system.",
+          "Designed player registration and lottery workflows."
+        ],
+        "skills": [
+          "Node.js",
+          "Backend",
+          "Excel"
+        ],
+        "featured": false
+      }
+    ],
+    "personal": [
+      {
+        "title": "Snake Quizz Ladder",
+        "subtitle": "Personal indie game · Approaching a playable demo",
+        "engine": "Unity + Node.js",
+        "image": "/images/projects/snakeLadder.png",
+        "bullets": [
+          "Developing a multiplayer snakes-and-ladders game with quiz challenges and category trophy progression.",
+          "Built server-authoritative dice outcomes with physics-driven client animation and networked pawn movement.",
+          "Added friends, requests, real-time chat and clubs with member profiles and shared trophy totals.",
+          "Implemented a remotely configured cosmetics shop, inventory and equipped player loadouts.",
+          "Current focus: bringing these systems together for the playable demo."
+        ],
+        "skills": [
+          "Unity",
+          "C#",
+          "Node.js",
+          "Multiplayer",
+          "Quiz Systems",
+          "Social Systems"
+        ],
+        "featured": true
+      },
+      {
+        "title": "Wheelchair Recoil Survival",
+        "subtitle": "In Development",
+        "engine": "Unreal Engine",
+        "image": "",
+        "bullets": [
+          "Physics-driven wheelchair movement.",
+          "Weapon and inventory systems.",
+          "Replication-ready multiplayer architecture.",
+          "Co-op survival gameplay."
+        ],
+        "skills": [],
+        "featured": true
+      },
+      {
+        "title": "Procedural Maze Generator",
+        "subtitle": "Reusable Unreal Template",
+        "engine": "Unreal Engine",
+        "image": "",
+        "bullets": [
+          "Optimized procedural maze generation algorithm.",
+          "Reusable framework for future games."
+        ],
+        "skills": [],
+        "featured": false
+      },
+      {
+        "title": "VR Spaceship Prototype",
+        "subtitle": "Built in one week",
+        "engine": "Unity VR",
+        "image": "",
+        "bullets": [
+          "Modular tutorial framework.",
+          "Step completion and fail system.",
+          "Floating draggable VR UI.",
+          "Bezier guidance lines.",
+          "Singleton audio manager.",
+          "Currently expanding with spaceship flight and battery systems."
+        ],
+        "skills": [],
+        "featured": false
+      }
+    ],
+    "personalTitle": "Personal Projects",
+    "focusTitle": "Current Focus",
+    "focus": [
+      "Firebase Push Notifications",
+      "Metrix Analytics SDK",
+      "GameAnalytics Integration",
+      "Live Ops Infrastructure",
+      "Multiplayer Systems",
+      "VR Gameplay Development"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "You can reach me through my social platforms:",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/manouchehr-soltani-the-creator"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/HooshangDev"
+      },
+      {
+        "label": "Telegram",
+        "href": "https://t.me/manouchehr_st"
+      }
+    ]
+  }
+}

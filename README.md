@@ -1,6 +1,22 @@
 # Hi, I'm Manouchehr Soltani 👋
 
+<<<<<<< Updated upstream
 ### Gameplay & Systems Engineer · Unreal Engine · Unity
+=======
+## Local content dashboard
+
+Run `npm install` once, then `npm run dashboard`. Open **http://127.0.0.1:3000/dashboard** (or the port printed in the terminal).
+
+Use the sidebar to edit Home, About, Contact, Experience, the featured project, site metadata, navigation, and footer. Projects and experience entries support adding, editing, removing, and reordering. Expand an item to edit its fields. Lists such as skills and screenshots use one item per line.
+
+Click **Save all changes** to persist your edits in `data/content.json`, then refresh the portfolio preview. **Discard** restores the last saved content. Each save creates a copy of the previous content under `.content-backups/`; restore a backup by copying it to `data/content.json`. Images and videos use paths to files inside `public`, such as `/images/projects/cover.png`; copy new media into that folder before referencing it.
+
+The dashboard and editing API are available only in development through localhost. `npm run dashboard` binds the server to your machine. Production builds show your saved content and disable dashboard access. Commit `data/content.json` with your website changes to publish the content.
+
+Validation: `npm run build`. With the local dashboard server running, `node scripts/check-dashboard.cjs` verifies persistence, project CRUD, page updates, validation, and access restrictions, then restores the original content. Set `DASHBOARD_URL` if using another port.
+
+<div align="center">
+>>>>>>> Stashed changes
 
 I build multiplayer games, physics-driven gameplay, VR experiences and the backend systems that support them. With **4+ years of hands-on experience**, my work spans solo game development, commercial releases, live-service systems and reusable gameplay frameworks.
 

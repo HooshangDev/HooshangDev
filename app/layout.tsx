@@ -2,23 +2,27 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { getContent } from '@/lib/contentStore'
 
-export const metadata: Metadata = {
-  title: 'Manouchehr Soltani | Gameplay & Systems Engineer',
-  description: 'Unreal Engine and Unity Gameplay Systems Engineer specializing in multiplayer, backend systems, and physics-driven gameplay.'
+export const dynamic = 'force-dynamic'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const { site } = await getContent()
+  return { title: site.title, description: site.description }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const { site } = await getContent()
   return (
     <html lang="en">
       <body className="gradient-bg min-h-screen">
-        <Navbar />
+        <Navbar site={site} />
         {children}
-        <Footer />
+        <Footer text={site.footer} />
       </body>
     </html>
   )
