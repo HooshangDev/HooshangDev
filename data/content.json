@@ -215,9 +215,6 @@
       "description": "My independently developed multiplayer board game brings quiz challenges to snakes and ladders. Roll the dice, climb the board and test your knowledge, with category-based trophies that give every answer a sense of progression. Recent development adds clubs, friend requests and real-time chat, alongside a remotely configured cosmetics shop and player customization. Built with Unity and a Node.js backend, the game combines server-authoritative dice outcomes with physics-driven dice animation. Now approaching a playable demo.",
       "image": "/images/projects/snakeLadder.png",
       "screenshots": [
-        "/images/projects/snake-quizz-ladder/lobby.png",
-        "/images/projects/snake-quizz-ladder/board.png",
-        "/images/projects/snake-quizz-ladder/customization.png",
         "/images/projects/dice_cool.jpg",
         "/images/projects/sql/sql8.png",
         "/images/projects/sql/sql9.png",
